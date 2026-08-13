@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.celular{
+  width:350px;
+  height:700px;
+  border:8px solid #333;
+  border-radius:40px;
+  background-color:#111;
+
+}
+.tela{
+  width:100%;
+  height: 100%;
+  background-color:#000;
+  border-radius:32px;
+}
+.barra-status{
+  width:100%;
+  height:35px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+  padding:0 15px;
+  font-size:14px;
+
+}
+.icones-status{
+  display:flex;
+  gap: 8px;
+  align-items:center;
+}
