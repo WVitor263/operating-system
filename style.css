@@ -1,139 +1,137 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.celular{
-  width:350px;
-  height:700px;
-  border:8px solid #333;
-  border-radius:40px;
-  background-color:#111;
-  position:relative;
-
+.celular {
+  width: 350px;
+  height: 700px;
+  border: 8px solid #333;
+  border-radius: 40px;
+  background-color: #111;
+  position: relative;
 }
-.tela{
-  width:100%;
+.tela {
+  width: 100%;
   height: 100%;
-  background-color:#000;
-  border-radius:32px;
-
-  position:relative;
+  background-color: #000;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
 }
-.barra-status{
-  width:100%;
-  height:35px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  color:#fff;
-  padding:0 15px;
-  font-size:14px;
-
+.barra-status {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 14px;
 }
-.icones-status{
-  display:flex;
+.icones-status {
+  display: flex;
   gap: 8px;
-  align-items:center;
+  align-items: center;
 }
-.wifi{
-  width:20px;
-  height:20px;
-  position:relative;
-}
-.wifi span{
-  position:absolute;
-  border:2px solid white;
-  left:50%;
-  transform:translateX(-50%);
-  border-bottom:none;
-  border-left-color:transparent;
-  border-right-color:transparent;
-  border-bottom-color:transparent;
-  border-radius:50%;
-}
-
-.wifi span:nth-child(1){
-  width:22px;
-  height:22px;
-  top:0;
-}
-.wifi span:nth-child(2){
-  width:15px;
-  height:15px;
-  top:4px;
-}   
-.wifi span:nth-child(3){
-  width:8px;
-  height:8px;
-  top:8px;
-}
-.wifi::after{
-  content:"";
-  position:absolute;
-  width: 3px;
-  height:3px;
-  background-color:white;
-  border-radius:50%;
-  left:50%;
-  bottom: 5px;
-  transform:translateX(-50%);
-}
-
-.sinal{
+.wifi {
   width: 20px;
-  height:20px;
-
-  display:flex;
-  align-items:flex-end;
-  gap:2px;
+  height: 20px;
+  position: relative;
 }
-.sinal span{
+.wifi span {
+  position: absolute;
+  border: 2px solid white;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+.wifi span:nth-child(1) {
+  width: 22px;
+  height: 22px;
+  top: 0;
+}
+.wifi span:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  top: 4px;
+}
+.wifi span:nth-child(3) {
+  width: 8px;
+  height: 8px;
+  top: 8px;
+}
+.wifi::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+}
+
+.sinal {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+.sinal span {
   width: 4px;
-  background-color:white;
-  border-radius:1px;
+  background-color: white;
+  border-radius: 1px;
 }
 
-.sinal span:nth-child(1){
-  height:5px;
+.sinal span:nth-child(1) {
+  height: 5px;
 }
-.sinal span:nth-child(2){
-  height:9px;
+.sinal span:nth-child(2) {
+  height: 9px;
 }
-.sinal span:nth-child(3){
-  height:14px;
+.sinal span:nth-child(3) {
+  height: 14px;
 }
-.sinal span:nth-child(4){
-  height:19px;
+.sinal span:nth-child(4) {
+  height: 19px;
 }
 
-.bateria{
+.bateria {
   width: 22px;
   height: 11px;
-   
+
   border: 2px solid white;
   border-radius: 3px;
   position: relative;
 }
 
-.bateria .terminal{
+.bateria .terminal {
   width: 2px;
   height: 5px;
   background-color: white;
   border-radius: 0 2px 2px 0;
-  
+
   position: absolute;
   right: -4px;
   top: 1px;
 }
 
-.carga{
+.carga {
   width: 14px;
   height: 7px;
 
@@ -145,16 +143,16 @@ body{
   top: 0px;
 }
 
-.parte-superior{
-  width:100%;
+.parte-superior {
+  width: 100%;
   height: 20px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 10;
 }
 
-.parte-superior .camera{
+.parte-superior .camera {
   width: 10px;
   height: 10px;
 
@@ -168,11 +166,11 @@ body{
   transform: translateX(-50%);
 }
 
- .parte-superior .auto-falante{
+.parte-superior .auto-falante {
   width: 35px;
   height: 3px;
   background-color: #222;
-  border: 2px solid #555; 
+  border: 2px solid #555;
   border-radius: 5px;
   position: absolute;
   left: 50%;
@@ -180,3 +178,10 @@ body{
   transform: translateX(-50%);
 }
 
+.tela-bloqueio {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 32px;
+  position: relative;
+}
