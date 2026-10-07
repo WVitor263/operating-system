@@ -236,3 +236,27 @@ body {
   transform: translateX(-50%);
   
 }
+
+.corpo::after{
+  content:"";
+  width: 5px;
+  height: 5px;
+  background-color:#333;
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.corpo::before {
+  content: "";
+  width: 3px;
+  height: 8px;
+  background-color: #333;
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
