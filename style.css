@@ -208,7 +208,7 @@ body {
 }
 .cadeado{
   position: absolute;
-  top: 280px;
+  top: 350px;
   left: 50%;
   transform: translateX(-50%);
   
@@ -238,6 +238,7 @@ body {
 }
 
 .corpo::after{
+  /* circulo */
   content:"";
   width: 5px;
   height: 5px;
@@ -251,6 +252,7 @@ body {
 }
 
 .corpo::before {
+  /* haste */
   content: "";
   width: 3px;
   height: 8px;
