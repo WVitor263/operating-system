@@ -75,4 +75,12 @@ span:nth-child(4){
 .rede span:nth-child(4){
   height:19px;
 }
+.cadeado{
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
 

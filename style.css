@@ -228,7 +228,7 @@ body {
   border-bottom: none;
   top: -12px;
   left: 2px;
-}
+} 
 .tela-bloqueio .mensagem-desbloqueio{
   position: absolute;
   bottom: 30px;
@@ -261,4 +261,7 @@ body {
   top: 9px;
   left: 50%;
   transform: translateX(-50%);
+}
+.tela-inicial{
+  display: none;
 }
